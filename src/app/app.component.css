@@ -1,0 +1,15 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+#color{
+    background-image:url("../assets/gymbanner.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background-color: #778abd;
+}
+
+.white-letters {
+    color: antiquewhite;
+    background: rgba(58, 60, 73, 0.8);
+}

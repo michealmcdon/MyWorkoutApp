@@ -1,0 +1,34 @@
+<mat-toolbar color="black">Create a Workout</mat-toolbar>
+<mat-card> 
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+      
+    <mat-form-field>
+        <strong>Name your Workout</strong>
+      <input
+        matInput
+        type="text"
+        name="title"
+        ngModel
+        required
+        minlength="3"
+        #title="ngModel">
+      <mat-error *ngIf="title.invalid">Please give your workout a name.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <strong>Exercises</strong>
+      <textarea
+        matInput
+        rows="6"
+        name="content"
+        ngModel
+        required
+        #content="ngModel"></textarea>
+      <mat-error *ngIf="content.invalid">Please enter your exercises.</mat-error>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit">Save Workout</button>
+  </form>
+</mat-card>

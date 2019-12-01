@@ -1,0 +1,35 @@
+<!-- <mat-toolbar color='primary'>Posts</mat-toolbar> -->
+<!-- <app-post-create></app-post-create>
+<app-post-details></app-post-details> -->
+<!-- <div class="button-row">
+  <a mat-raised-button color="primary" [routerLink]="['/']"><mat-icon>add</mat-icon></a>
+</div> -->
+
+<mat-toolbar id="color"> 
+    <mat-toolbar-row>
+            <span class="title-center">
+              <img src="../assets/muscle.png" alt="musclelogo" height="30px" align ="top">
+         <span class="white-letters" >My Workout App</span>  
+
+    </span>
+      </mat-toolbar-row>
+    
+      <mat-toolbar-row>
+        <span class="white-letters" >
+  <button mat-button [routerLink]="['/create']" color="Warn">Create</button>
+  <button mat-button [routerLink]="['/list']">Workouts</button>
+  <button mat-button [routerLink]="['/membership']">Membership</button>
+  <button mat-button [routerLink]="['/admin']">Admin</button>
+</span></mat-toolbar-row>
+ </mat-toolbar>
+
+
+<!--<button mat-button color="primary" [matMenuTriggerFor]="menu">Posts Menu</button>
+<mat-menu color="primary" #menu="matMenu">
+  <button color="primary" mat-menu-item [routerLink]="['/create']">Create</button>
+  <button color="primary"mat-menu-item [routerLink]="['/']">List</button>
+</mat-menu> -->
+  
+ 
+
+<router-outlet></router-outlet>
